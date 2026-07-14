@@ -249,8 +249,8 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
   if (!baseApi) {
     void vscode.window.showErrorMessage(
       tr(
-        "DayZ PAA Preview must be updated before the Creative Bridge toolbar action can be added.",
-        "DayZ PAA Preview muss aktualisiert werden, bevor die Creative-Bridge-Aktion hinzugefügt werden kann.",
+        "Arma/DayZ PAA Image Preview must be updated before the Creative Bridge toolbar action can be added.",
+        "Arma/DayZ PAA Image Preview muss aktualisiert werden, bevor die Creative-Bridge-Aktion hinzugefügt werden kann.",
       ),
     );
     return;

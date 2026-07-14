@@ -78,6 +78,10 @@ test("provides complete English and German manifest localization", () => {
       assert.equal(typeof localized[key], "string");
       assert.ok(localized[key].trim());
     }
+    assert.match(
+      localized["extension.description"],
+      /Arma\/DayZ PAA Image Preview/,
+    );
   }
 });
 

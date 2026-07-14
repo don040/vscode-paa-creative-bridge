@@ -1,6 +1,6 @@
 # DayZ PAA Creative Bridge
 
-Öffnet eine lokale DayZ-`.paa`-Textur direkt aus [DayZ PAA Preview](https://marketplace.visualstudio.com/items?itemName=chrisczopnik.dayz-paa-preview) in Adobe Photoshop.
+Öffnet eine lokale Arma- oder DayZ-`.paa`-Textur direkt aus [Arma/DayZ PAA Image Preview](https://marketplace.visualstudio.com/items?itemName=chrisczopnik.dayz-paa-preview) in Adobe Photoshop.
 
 Diese Companion-Extension ergänzt die PAA-Vorschauleiste zwischen Export und TexView um **In Adobe Photoshop öffnen**. Dieselbe Aktion steht im Explorer-Kontextmenü und in der Befehlspalette zur Verfügung.
 
@@ -16,8 +16,8 @@ Adobe Photoshop unterstützt DayZ-PAA-Dateien nicht garantiert von Haus aus. Die
 
 ## Verwendung
 
-1. DayZ PAA Preview und diese Companion-Extension installieren.
-2. Eine lokale `.paa` mit **DayZ PAA Preview** öffnen.
+1. Arma/DayZ PAA Image Preview und diese Companion-Extension installieren.
+2. Eine lokale `.paa` mit **Arma/DayZ PAA Image Preview** öffnen.
 3. In der Vorschauleiste **In Adobe Photoshop öffnen** auswählen.
 
 Alternativ im VS-Code-Explorer eine `.paa` mit der rechten Maustaste anklicken und **PAA: In Adobe Photoshop öffnen** auswählen.

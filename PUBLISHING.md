@@ -9,7 +9,7 @@ The extension manifest currently uses:
 
 Before the first Marketplace release, confirm that `chrisczopnik` is the publisher ID you own. If the publisher ID changes, update both `publisher` and `extensionDependencies` as needed before publishing version 1.0.0.
 
-Publish the compatible DayZ PAA Preview version before publishing this companion so Marketplace dependency installation can resolve `chrisczopnik.dayz-paa-preview`.
+Publish the compatible Arma/DayZ PAA Image Preview version before publishing this companion so Marketplace dependency installation can resolve `chrisczopnik.dayz-paa-preview`.
 
 Add the final public source repository URL to `package.json` before publishing so Marketplace documentation links and source metadata resolve correctly. Do not invent or publish a placeholder URL.
 
@@ -24,7 +24,7 @@ Add the final public source repository URL to `package.json` before publishing s
 ## Release checklist
 
 1. Update `version` in `package.json` and add release notes to `CHANGELOG.md`.
-2. Confirm the dependency version exposes the supported DayZ PAA Preview companion-action API.
+2. Confirm the dependency version exposes the supported Arma/DayZ PAA Image Preview companion-action API.
 3. Run `npm ci`.
 4. Run `npm test`.
 5. Run `npm run package` to produce the `win32-x64` VSIX.

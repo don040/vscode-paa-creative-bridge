@@ -1,6 +1,6 @@
 {
   "extension.displayName": "DayZ PAA Creative Bridge",
-  "extension.description": "Adds Adobe Photoshop launch integration to DayZ PAA Preview. Separately installed Photoshop and a compatible third-party PAA plug-in are required.",
+  "extension.description": "Adds Adobe Photoshop launch integration to Arma/DayZ PAA Image Preview. Separately installed Photoshop and a compatible third-party PAA plug-in are required.",
   "command.openInPhotoshop": "PAA: Open in Adobe Photoshop",
   "command.selectPhotoshop": "PAA: Select Adobe Photoshop executable",
   "configuration.title": "DayZ PAA Creative Bridge",
