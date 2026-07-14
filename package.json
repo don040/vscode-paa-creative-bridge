@@ -1,0 +1,96 @@
+{
+  "name": "dayz-paa-creative-bridge",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "version": "1.0.0",
+  "publisher": "chrisczopnik",
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "media/icon.png",
+  "pricing": "Free",
+  "galleryBanner": {
+    "color": "#1b2836",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "dayz",
+    "paa",
+    "photoshop",
+    "texture",
+    "image editor",
+    "creative bridge"
+  ],
+  "main": "./dist/extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "extensionDependencies": [
+    "chrisczopnik.dayz-paa-preview"
+  ],
+  "activationEvents": [
+    "onCustomEditor:chrisczopnik.dayzPaaPreview",
+    "onCommand:dayzPaaCreativeBridge.openInPhotoshop",
+    "onCommand:dayzPaaCreativeBridge.selectPhotoshop"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "The extension launches locally installed desktop software with a local PAA file."
+    },
+    "virtualWorkspaces": {
+      "supported": false,
+      "description": "Opening a PAA in desktop image-editing software requires a local Windows file."
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "dayzPaaCreativeBridge.openInPhotoshop",
+        "title": "%command.openInPhotoshop%"
+      },
+      {
+        "command": "dayzPaaCreativeBridge.selectPhotoshop",
+        "title": "%command.selectPhotoshop%"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "dayzPaaCreativeBridge.openInPhotoshop",
+          "when": "resourceExtname == .paa || resourceExtname == .PAA",
+          "group": "navigation@13"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "%configuration.title%",
+      "properties": {
+        "dayzPaaCreativeBridge.photoshopPath": {
+          "type": "string",
+          "scope": "machine",
+          "default": "",
+          "markdownDescription": "%configuration.photoshopPath%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "test": "npm run compile && node --test test/*.test.cjs",
+    "verify:local": "npm run compile && node scripts/verify-local.cjs",
+    "package": "npm run compile && vsce package --target win32-x64 --no-dependencies",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^3.2.2",
+    "typescript": "^5.7.2"
+  }
+}
