@@ -12,7 +12,7 @@ This companion extension adds **Open in Adobe Photoshop** between the export and
 - Visual Studio Code 1.85 or newer
 - `chrisczopnik.dayz-paa-preview`, installed as a separate extension dependency
 - Adobe Photoshop, installed separately
-- a compatible third-party PAA file-format plug-in for Adobe Photoshop, installed and configured separately
+- a compatible third-party PAA file-format plug-in for Adobe Photoshop, installed and configured separately. [Like this one by Gruppe Adler](https://github.com/gruppe-adler/PaaPhotoshopPlugin)
 
 Adobe Photoshop does not natively guarantee support for DayZ PAA files. This extension only passes the selected local `.paa` path to Photoshop. It does not include, install, configure, license, or provide support for Adobe software or any PAA format plug-in.
 
