@@ -1,5 +1,7 @@
 # DayZ PAA Creative Bridge
 
+> Windows companion extension for Arma/DayZ PAA Image Preview. A German version is available in [README.de.md](README.de.md).
+
 Open a local Arma or DayZ `.paa` texture in Adobe Photoshop directly from [Arma/DayZ PAA Image Preview](https://marketplace.visualstudio.com/items?itemName=chrisczopnik.dayz-paa-preview).
 
 This companion extension adds **Open in Adobe Photoshop** between the export and TexView actions in the PAA preview toolbar. The same action is available from the Explorer context menu and Command Palette.
